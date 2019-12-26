@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+        <h1>Farnsworth's <span class="line-through">Death</span> Pomodoro Clock</h1>
+        <h2>"It can do other things"</h2>
+        <div class="trapezoid"></div>
+        <div class="box">
+          <div class="clock-border">
+            <!-- Break -->
+            <div class="unit-wrapper">
+              <p id="break-label" class="label">Break Length</p>
+              <div id="break-length" class="display">5</div>
+              <div>
+                <button id="break-increment">+</button>
+                <button id="break-decrement">-</button>
+              </div>
+            </div>
+            <!-- Session -->
+            <div class="unit-wrapper">
+              <p id="session-label" class="label">Session Length</p>
+              <div id="session-length" class="display">25</div>
+              <div>
+                <button id="session-increment">+</button>
+                <button id="session-decrement">-</button>
+              </div>
+            </div>
+            <!-- Timer -->
+            <div class="unit-wrapper">
+              <p id="timer-label" class="label">Session</p>
+              <div id="time-left" class="display">25:00</div>
+              <div>
+                <button id="start_stop" class="play-button">start</button>
+                <button id="reset">reset</button>
+                <audio id="beep" src="https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3" type="audio/mp3"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="pad-wrapper">
+            <div class="pad"></div>
+            <div class="pad right"></div>
+          </div>
+        </div>
+      </div>
+      <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
